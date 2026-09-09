@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in LaTeX
+% Based on Jake's Resume template
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Kushnava Singha} \\ \vspace{1pt}
+    \small 
+    \href{mailto:kushnavas@gmail.com}{\underline{kushnavas@gmail.com}}  $|$
+    \href{https://github.com/kshnva}{\underline{github.com/kshnva}} 
+\end{center}
+
+%-----------ABOUT-----------
+\section{About}
+\small{
+% Mechanical Engineer turned computational scientist, applying numerical methods and machine learning across materials science, computational finance, and neurovascular modeling . Experienced in building end-to-end simulation and data-driven pipelines from DEM and Monte Carlo solvers to network stability analysis with a focus on deriving quantitative insight from complex physical systems .
+Computational scientist with a background in Mechanical Engineering interested in numerical modeling, simulation driven machine learning approaches applied to physical and engineering systems. Experienced in building robust end to end computational pipelines that translate engineering problems into quantitative insight.
+}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universiteit van Amsterdam}{Amsterdam, Netherlands}
+      {MSc Computational Science $|$ GPA: 7.3/10.0 (Dutch Scale)}{Sep. 2024 -- Present} 
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Scientific Computing, Complex System Simulation}
+      \resumeItemListEnd
+    \resumeSubheading
+      {National Institute of Technology Trichy(NIRF Rank 9, Engineering)}{Trichy, India}
+      {BTech Mechanical Engineering $|$ GPA: 8.1/10.0}{Sep. 2020 -- Aug. 2024} 
+\resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Fluid Mechanics, Heat Transfer}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Intern, Biomedical Engineering and Physics}{Dec. 2025 -- Present}
+      {Amsterdam UMC}{Amsterdam, Netherlands}
+      \resumeItemListStart
+        \resumeItem{Built a Python pipeline to extract vascular network statistics from a $1\text{ mm}^{3}$ H01 human connectome electron-microscopy volume, using anisotropic distance transform (EDT) radius estimation and grayscale dilation gap bridging to recover true vessel connectivity from a tiled segmentation .}
+        % \resumeItem{Classified penetrating arterioles via anatomical filtering to derive physiologically realistic radius, length, and density inputs for hemodynamic model}
+        \resumeItem{Developed a physics constrained model of internal viscous flow in the 
+    cerebral microvasculature, coupling Poiseuille flow hemodynamics, 
+    wallshearstress driven vessel remodelling, and endothelial electrical 
+    coupling.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Computational Material Science Intern}{May 2023 -- Jul. 2023}
+      {PhaseTree}{Copenhagen, Denmark}
+      \resumeItemListStart
+        \resumeItem{Researched computation methods for novel battery material development}
+        \resumeItem{Engineered feature selection for relevant clusters and optimized per atom Effective Cluster Interaction (ECI) values using DFT data, enhancing model accuracy and fidelity to material behavior .}
+        \resumeItem{Applied Leave One Out Cross Validation (LOOCV) to improve model robustness, and conducted Semi Grand Canonical Monte Carlo simulations to study thermodynamic behavior of complex structures .}
+        \resumeItem{Designed a Radial Distribution Function (RDF) observer to detect phase separations, enriching analysis depth and insights .}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Summer Research Intern}{May 2022 -- Jul. 2022}
+      {Technical University of Denmark (DTU)}{Kongens Lyngby, Denmark}
+      \resumeItemListStart
+        \resumeItem{Optimized high entropy alloy (HEA) compositions for battery material application by optimizing structures with Atomistic Simulation Environment (ASE) and Effective Medium Potential (EMT) to identify lowest energy configurations and formation enthalpies .}
+        \resumeItem{Developed a Genetic Algorithm (GA) to explore metal concentration space and integrated Gaussian Process Regression (GPR) to predict material properties, enabling discovery of novel HEA formulations .}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Academic Projects}
+    \resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{Force Networks in Binary Granular Systems} $|$ \emph{Python, LIGGGHTS DEM}}{May 2024}
+  \resumeItemListStart
+    \resumeItem{Investigated force propagation in segregated binary granular systems under static compressive loading via DEM simulations, assessing how particle size ratio governs whether external loads are deflected around an interior region or transmitted through it (stress shielding); built a Python pipeline to extract, visualize, and analyze force networks from raw contact force data.}
+    \resumeItem{Found average contact force in the intermediate (mixed-size) zone scales linearly with radius ratio, falling up to 51\% below the larger particle zone at low ratios ($r=0.45$) evidence that strong size disparity routes load around the interior while the gap closes and reverses as the ratio approaches unity; derived empirical force ratio relations and validated trends across cylindrical, cuboidal, and ternary configurations.}
+  \resumeItemListEnd 
+      \resumeProjectHeading
+          {\textbf{Carbon-Aware Workflow Scheduling on OpenDC} $|$ \emph{Python, Jupyter}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{Extended the OpenDC datacenter simulation platform to evaluate carbon-aware and workflow-aware scheduling strategies using year-long carbon-intensity data from the Netherlands grid .}
+            \resumeItem{Designed a workflow-aware scheduler combining deadline-slack urgency, critical-dependency-chain length, and a decay-weighted parallelism score into a single priority function, and a carbon-aware scheduler using topological sorting and branch-and-bound search to place tasks in low-carbon time slots .}
+            \resumeItem{Compared reactive carbon-shifting versus structural workflow optimization; found that reactive task-level carbon shifting produced marginal and inconsistent reductions, while workflow-aware scheduling achieved up to 6.72\% makespan reduction and 5.86\% carbon reduction .}
+            \resumeItem{Validated scheduler scalability across synthetic, scientific, and real-world DAG traces (10--100 concurrent workflows), demonstrating that dependency-aware structural optimization is a more effective foundation for sustainable datacenter scheduling than reactive carbon-intensity following .}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Parallel Rubik's Cube Solver on HPC Cluster} $|$ \emph{Julia, MPI, HPC}}{Jan. 2026}
+          \resumeItemListStart
+            \resumeItem{Group project implementing two parallel variants of Iterative Deepening Depth-First Search (IDDFS) for optimal Rubik's Cube solving using a Master-Worker architecture in Julia's Distributed package, deployed across up to 256 cores on the DAS-5 HPC cluster .}
+            \resumeItem{Designed synchronous (static round-robin, barrier-synchronized) and asynchronous (dynamic queue-based load balancing via RemoteChannel) work distribution strategies, and derived theoretical complexity and Amdahl's Law speedup bounds to guide cutoff depth tuning .}
+            \resumeItem{Benchmarked strong scaling and cutoff-depth sensitivity, achieving up to $14\times$ speedup at 256 cores; found the synchronous variant consistently outperformed the asynchronous one due to speculative redundancy, and identified Hyper Threading induced cache contention and GC starvation as key scalability bottlenecks .}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Force Networks in Binary Granular Systems} $|$ \emph{Python, LIGGGHTS DEM}}{May 2024}
+      %     \resumeItemListStart
+      %       \resumeItem{Investigated force propagation in segregated binary granular systems under compression via DEM simulations, developing a Python pipeline to analyze and visualize force networks for 10,000+ particles .}
+      %       \resumeItem{Identified a linear correlation between particle radius ratios and average contact forces; forces in intermediate zones were 15--40\% lower than homogeneous zones. Validated across geometries and ternary systems .}
+      %     \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Co-Evolution of Robot Morphology and Control} $|$ \emph{Python, ARIEL}}{Oct. 2025}
+          \resumeItemListStart
+            \resumeItem{Group project implementing a nested CMA-ES framework in the ARIEL simulation environment to jointly evolve modular robot morphology and Central Pattern Generator (CPG)-based locomotion control, decoding 192 dimensional latent genotypes via a Neural Developmental Encoder (NDE) and High-Probability Decoder (HPD) .}
+            \resumeItem{Designed a three-terrain evaluation scheme to combine fitness across flat, rugged, and inclined surfaces, addressing local fitness maxima encountered when controllers were evolved on rugged terrain alone .}
+            \resumeItem{Analyzed structural network metrics (modularity, connection efficiency, sparsity, symmetry) across generations, finding that generative encoding promoted spontaneous structural regularity even as functional fitness gains plateaued under fixed morphology .}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Urban Riot Emergence via Agent-Based Modelling} $|$ \emph{Python} }{May 2025}
+          \resumeItemListStart
+            \resumeItem{Modelled how urban design factors (street width, exit spacing, number of streets) influence riot emergence using a multi-agent simulation built in Python .}
+            \resumeItem{Implemented Sobol sensitivity analysis to identify which urban design parameters most strongly drive rioter and injured-agent outcomes, and produced HTML animation outputs for qualitative inspection .}
+            \resumeItem{Conducted parameter variation sweeps across spatial configurations, quantifying the sensitivity of crowd dynamics to structural urban features .}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Carbon-Aware Workflow Scheduling on OpenDC} $|$ \emph{Python, Jupyter}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{Extended the OpenDC datacenter simulation platform to evaluate carbon-aware and workflow-aware scheduling strategies using year-long carbon-intensity data from the Netherlands grid .}
+            \resumeItem{Designed a workflow-aware scheduler combining deadline-slack urgency, critical-dependency-chain length, and a decay-weighted parallelism score into a single priority function, and a carbon-aware scheduler using topological sorting and branch-and-bound search to place tasks in low-carbon time slots .}
+            \resumeItem{Compared reactive carbon-shifting versus structural workflow optimization; found that reactive task-level carbon shifting produced marginal and inconsistent reductions, while workflow-aware scheduling achieved up to 6.72\% makespan reduction and 5.86\% carbon reduction .}
+            \resumeItem{Validated scheduler scalability across synthetic, scientific, and real-world DAG traces (10--100 concurrent workflows), demonstrating that dependency-aware structural optimization is a more effective foundation for sustainable datacenter scheduling than reactive carbon-intensity following .}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Hotel Booking Prediction and Ranking System} $|$ \emph{Python, XGBoost, LightGBM}}{Jun. 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a hotel recommendation system predicting booking likelihood using Expedia's Kaggle dataset, engineering features to capture user behavior and hotel characteristics .}
+            \resumeItem{Implemented XGBoost and LightGBM ranking models with a Ridge regression stacking meta-model, applying GroupKFold cross-validation and MinMax scaling to reduce overfitting .}
+            \resumeItem{Achieved top 10\% Kaggle ranking; stacking improved precision and delivered the highest NDCG among all tested models .}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Exotic Options Pricing and Stochastic Model Calibration} $|$ \emph{Python, NumPy, SciPy}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{Implemented numerical pricing engines with 500-point spatial and temporal grids for binary and barrier options .}
+            \resumeItem{Calibrated the Heston stochastic volatility model to S\&P 500 implied volatility surfaces using semi-closed characteristic function formulas and Monte Carlo methods .}
+            \resumeItem{Optimized five Heston parameters ($\rho, V_0, \theta, \kappa, \sigma$) via least-squares minimization, achieving RMSE $<$ 5.1\% across the strike--maturity grid; implemented in log-coordinates to prevent negative variance .}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Stochastic Derivatives Pricing and Weather Risk Modelling} $|$ \emph{Python, Monte Carlo}}{Apr. -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Derived analytical replication strategy for realized variance swaps via Carr--Madan log-contract decomposition under stochastic volatility, constructing a self-financing dynamic hedging portfolio .}
+            \resumeItem{Built a Monte Carlo pricing engine for Asian options under the Heston model, comparing Euler and Milstein schemes; applied geometric-average control variates reducing standard error by $2\times$ for ITM low-vol strikes .}
+            \resumeItem{Calibrated a stochastic temperature model for Amsterdam using 4+ years of data, decomposing time series into Fourier seasonality and mean-reverting AR(3) residuals, then priced HDD derivatives via Monte Carlo .}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Volatility Estimation and Delta Hedging} $|$ \emph{Python, Yahoo Finance API}}{Apr. 2025}
+          \resumeItemListStart
+            \resumeItem{Implemented multiple volatility estimators on 15+ years of Apple equity data, comparing realized vs.\ implied volatility; built a model-free VIX achieving 27.05\% vs.\ 23.51\% CBOE benchmark ($\rho=0.664$) .}
+            \resumeItem{Ran Monte Carlo simulations showing $\pm$10\% volatility error causes systematic P\&L bias, with hedging frequency primarily affecting variance rather than mean drift .}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Mood Prediction from Smartphone Sensor Data} $|$ \emph{Python, scikit-learn, PyTorch}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{Predicted next-day mood from smartphone sensor data using a structured data mining pipeline with temporal feature engineering, outlier removal, and hybrid KNN imputation .}
+            \resumeItem{Implemented Random Forest and LSTM regression models with group-aware cross-validation; LSTM outperformed RF, demonstrating superior capture of temporal dependencies in behavioral data .}
+          \resumeItemListEnd
+
+
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, MATLAB, R, Mathematica, Julia}  \\
+     \textbf{ML \& Data}{: scikit-learn, PyTorch, XGBoost, LightGBM, pandas, NumPy, SciPy, Matplotlib}  \\
+     \textbf{Simulation}{: LIGGGHTS (DEM), Monte Carlo methods, FD/FV solvers, ASE, EMT}  \\
+     \textbf{Methods}{: Stochastic processes, network flow analysis, genetic algorithms, Gaussian Process Regression, time series modeling} 
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

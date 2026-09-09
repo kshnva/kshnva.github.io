@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kushnava Singha — Computational Scientist</title>
+  <meta name="description" content="Kushnava Singha — computational scientist working on numerical modelling, atomistic simulation and simulation-driven machine learning. MSc Computational Science, University of Amsterdam. Seeking PhD positions.">
+  <meta property="og:title" content="Kushnava Singha — Computational Scientist">
+  <meta property="og:description" content="Numerical modelling · atomistic simulation · simulation-driven ML. Seeking PhD positions.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top">K. Singha</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-cv" href="cv/Kushnava_Singha_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-lattice" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Computational scientist · Amsterdam</p>
+      <h1>Kushnava Singha</h1>
+      <p class="lede">
+        I build numerical models and simulations of physical systems — from atomistic
+        cluster expansions and Monte Carlo to discrete-element and continuum solvers —
+        and pair them with machine learning to extract quantitative insight from
+        experimental and simulation data.
+      </p>
+      <p class="status">
+        <span class="dot" aria-hidden="true"></span>
+        Open to PhD positions in numerical modelling &amp; atomistic simulation, and to technical research roles.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn" href="cv/Kushnava_Singha_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn btn-ghost" href="mailto:kushnavas@gmail.com">Get in touch</a>
+      </div>
+    </div>
+
+    <!--
+      PHOTO SLOT — to add a headshot, save it as assets/photo.jpg
+      and remove the `hidden` attribute from the figure below.
+    -->
+    <figure class="hero-photo" hidden>
+      <img src="assets/photo.jpg" alt="Kushnava Singha" width="220" height="220" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap two-col">
+    <div class="col-head">
+      <h2>About</h2>
+    </div>
+    <div class="col-body prose">
+      <p>
+        I am a computational scientist with a background in mechanical engineering,
+        currently completing an MSc in Computational Science at the University of Amsterdam.
+        My work sits at the boundary between physics-based modelling and data-driven methods:
+        I am most interested in problems where a simulation has to be built, calibrated against
+        real measurements, and then interrogated at scale.
+      </p>
+      <p>
+        That has taken me through cluster-expansion models of alloys fitted to DFT data,
+        Monte Carlo studies of phase behaviour, DEM simulations of granular force networks,
+        hemodynamic models of the cerebral microvasculature built from electron-microscopy
+        volumes, and parallel search on a 256-core HPC cluster.
+      </p>
+      <p>
+        I am looking for a PhD where I can go deep on numerical modelling and atomistic or
+        mesoscale simulation of materials and physical systems, ideally in a group that
+        values both rigorous methods and well-engineered, reproducible code.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH INTERESTS ============ -->
+<section class="section section-alt" id="research">
+  <div class="wrap two-col">
+    <div class="col-head">
+      <h2>Research interests</h2>
+    </div>
+    <div class="col-body">
+      <ul class="interest-grid">
+        <li>
+          <h3>Atomistic &amp; mesoscale simulation</h3>
+          <p>Cluster expansion, Monte Carlo (canonical &amp; semi-grand canonical), effective-medium potentials, alloy thermodynamics and phase separation.</p>
+        </li>
+        <li>
+          <h3>Numerical methods for PDEs</h3>
+          <p>Finite-difference and finite-volume solvers, iterative methods (Jacobi, Gauss–Seidel, SOR), eigenvalue problems, time integration and stability.</p>
+        </li>
+        <li>
+          <h3>Particle &amp; network models</h3>
+          <p>Discrete-element simulation of granular media, force-network analysis, flow on vascular and power-grid networks, agent-based models.</p>
+        </li>
+        <li>
+          <h3>Simulation-driven machine learning</h3>
+          <p>Surrogate models, Gaussian-process regression, genetic algorithms and CMA-ES for design-space exploration and inverse problems.</p>
+        </li>
+        <li>
+          <h3>High-performance &amp; scientific computing</h3>
+          <p>Distributed parallelism in Julia and Python, strong-scaling analysis, reproducible simulation pipelines.</p>
+        </li>
+        <li>
+          <h3>Stochastic modelling</h3>
+          <p>Stochastic differential equations, Monte Carlo variance reduction, calibration of stochastic models to data.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="wrap two-col">
+    <div class="col-head">
+      <h2>Experience</h2>
+    </div>
+    <div class="col-body">
+      <ol class="timeline">
+        <li>
+          <div class="tl-meta">
+            <span class="tl-date">Dec 2025 — present</span>
+            <span class="tl-place">Amsterdam, NL</span>
+          </div>
+          <div class="tl-body">
+            <h3>Research Intern, Biomedical Engineering &amp; Physics</h3>
+            <p class="tl-org">Amsterdam UMC</p>
+            <ul>
+              <li>Built a Python pipeline to extract vascular-network statistics from a 1&nbsp;mm³ H01 human-connectome electron-microscopy volume, using anisotropic distance-transform radius estimation and greyscale-dilation gap bridging to recover vessel connectivity from a tiled segmentation.</li>
+              <li>Developed a physics-constrained model of viscous flow in the cerebral microvasculature, coupling Poiseuille hemodynamics, wall-shear-stress-driven vessel remodelling and endothelial electrical coupling.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tl-meta">
+            <span class="tl-date">May — Jul 2023</span>
+            <span class="tl-place">Copenhagen, DK</span>
+          </div>
+          <div class="tl-body">
+            <h3>Computational Materials Science Intern</h3>
+            <p class="tl-org">PhaseTree</p>
+            <ul>
+              <li>Engineered cluster feature selection and optimised per-atom effective cluster interactions (ECIs) against DFT data for battery-material candidates.</li>
+              <li>Applied leave-one-out cross-validation and ran semi-grand-canonical Monte Carlo simulations to study thermodynamic behaviour of complex structures.</li>
+              <li>Designed a radial-distribution-function observer to detect phase separation during simulation.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tl-meta">
+            <span class="tl-date">May — Jul 2022</span>
+            <span class="tl-place">Kongens Lyngby, DK</span>
+          </div>
+          <div class="tl-body">
+            <h3>Summer Research Intern</h3>
+            <p class="tl-org">Technical University of Denmark (DTU)</p>
+            <ul>
+              <li>Optimised high-entropy-alloy compositions with ASE and the effective-medium potential to identify lowest-energy configurations and formation enthalpies.</li>
+              <li>Developed a genetic algorithm over metal-concentration space and integrated Gaussian-process regression to predict material properties and propose novel HEA formulations.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="sub-heading">Education</h3>
+      <ol class="timeline timeline-compact">
+        <li>
+          <div class="tl-meta"><span class="tl-date">2024 — present</span></div>
+          <div class="tl-body">
+            <h3>MSc Computational Science</h3>
+            <p class="tl-org">University of Amsterdam</p>
+            <p class="tl-note">Scientific Computing · Complex-System Simulation · Stochastic Simulation · Numerical Algorithms · Computational Finance</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-meta"><span class="tl-date">2020 — 2024</span></div>
+          <div class="tl-body">
+            <h3>BTech Mechanical Engineering</h3>
+            <p class="tl-org">National Institute of Technology, Tiruchirappalli</p>
+            <p class="tl-note">Fluid Mechanics · Heat Transfer · Bachelor's thesis on DEM force networks in granular media</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section-alt" id="projects">
+  <div class="wrap">
+    <div class="projects-head">
+      <div>
+        <h2>Projects</h2>
+        <p class="section-lede">Selected research and coursework. Cards with a <span class="mono">code</span> link open the repository on GitHub.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter projects">
+        <button class="filter is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="filter" role="tab" aria-selected="false" data-filter="sim">Simulation &amp; modelling</button>
+        <button class="filter" role="tab" aria-selected="false" data-filter="ml">ML &amp; data</button>
+        <button class="filter" role="tab" aria-selected="false" data-filter="finance">Quant finance</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider" id="project-slider">
+    <button class="slider-btn slider-prev" aria-label="Previous projects">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4 6.5 10l6 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="slider-btn slider-next" aria-label="Next projects">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7.5 4 6 6-6 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <ul class="track" id="project-track" tabindex="0" aria-label="Project cards, scroll horizontally">
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">Atomistic simulation</span>
+          <span class="card-date">2023</span>
+        </div>
+        <h3>Cluster expansion of Au–Cu alloys</h3>
+        <p>L1-regularised cluster-expansion model fitted with 10-fold cross-validation (CV 1.9&nbsp;meV/atom), then used in canonical Monte Carlo on a 1000-atom FCC supercell to map formation energy across composition at 100–800&nbsp;K.</p>
+        <ul class="tags"><li>CLEASE</li><li>ASE</li><li>Monte Carlo</li><li>Python</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/rdf-observer" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">Discrete-element simulation</span>
+          <span class="card-date">2024</span>
+        </div>
+        <h3>Force networks in binary granular systems</h3>
+        <p>DEM study in LIGGGHTS of how particle-size ratio governs load transmission under static compression. Built a pipeline to extract and visualise force networks for 10,000+ particles; found contact force in mixed zones scales linearly with radius ratio, up to 51% below the large-particle zone.</p>
+        <ul class="tags"><li>LIGGGHTS</li><li>DEM</li><li>Python</li></ul>
+        <span class="card-link is-muted">Bachelor's thesis · code on request</span>
+      </li>
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">High-performance computing</span>
+          <span class="card-date">2026</span>
+        </div>
+        <h3>Parallel Rubik's Cube solver on DAS-5</h3>
+        <p>Synchronous and asynchronous master–worker variants of iterative-deepening DFS in Julia's Distributed package, benchmarked to 256 cores. 14× strong-scaling speedup; identified hyper-threading cache contention and GC starvation as the limiting factors.</p>
+        <ul class="tags"><li>Julia</li><li>Distributed</li><li>HPC</li></ul>
+        <span class="card-link is-muted">Group project · code on request</span>
+      </li>
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">Numerical PDEs</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Finite-difference solvers for diffusion, waves and eigenmodes</h3>
+        <p>Time-dependent diffusion with masked domains, vibrating-string dynamics, and eigenmode analysis of 2-D membranes. Compared explicit, Jacobi, Gauss–Seidel and SOR iteration; direct and leapfrog integrators; driven harmonic oscillators in phase space.</p>
+        <ul class="tags"><li>NumPy</li><li>SciPy</li><li>Finite differences</li></ul>
+        <span class="card-links">
+          <a class="card-link" href="https://github.com/kshnva/SciCompGroup8" target="_blank" rel="noopener">part 1<span aria-hidden="true"> ↗</span></a>
+          <a class="card-link" href="https://github.com/kshnva/ScientificComputingGroup8_A3" target="_blank" rel="noopener">part 2<span aria-hidden="true"> ↗</span></a>
+        </span>
+      </li>
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">Complex systems</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Cascading failures in power grids</h3>
+        <p>Network model of failure propagation under load redistribution. Compared random and targeted attacks across centrality measures and grid capacities to quantify which topological features govern resilience.</p>
+        <ul class="tags"><li>NetworkX</li><li>Network science</li><li>Python</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/ComplexSystemProject" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">Systems simulation</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Carbon-aware workflow scheduling on OpenDC</h3>
+        <p>Extended the OpenDC datacentre simulator with workflow-aware and carbon-aware schedulers, evaluated on a year of Dutch grid carbon-intensity data. Structural workflow optimisation beat reactive carbon shifting: up to 6.7% shorter makespan and 5.9% lower emissions across 10–100 concurrent DAG workloads.</p>
+        <ul class="tags"><li>OpenDC</li><li>Scheduling</li><li>Python</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/energyless" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">Agent-based modelling</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Urban design and riot emergence</h3>
+        <p>Multi-agent simulation of how street width, exit spacing and street count shape crowd dynamics. Sobol sensitivity analysis over urban-design parameters, parameter sweeps across spatial configurations, and animated outputs for qualitative inspection.</p>
+        <ul class="tags"><li>Mesa</li><li>Sobol SA</li><li>Python</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/abm-project" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="sim">
+        <div class="card-top">
+          <span class="card-kind">Stochastic simulation</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Epidemic spread on networks</h3>
+        <p>Exact stochastic SIR dynamics via Gillespie's algorithm on spatial, scale-free and transmission networks. Explored how initial-node centrality, reproduction number and network scale change outbreak size and timing.</p>
+        <ul class="tags"><li>Gillespie</li><li>NetworkX</li><li>Python</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/Intro-CLS-Assignment-2" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="ml">
+        <div class="card-top">
+          <span class="card-kind">Evolutionary computation</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Co-evolution of robot morphology and control</h3>
+        <p>Nested CMA-ES in the ARIEL/MuJoCo environment, jointly evolving modular body plans (192-D latent genotype through a neural developmental encoder) and CPG controllers across flat, rugged and inclined terrain. Tracked modularity, sparsity and symmetry of evolved networks across generations.</p>
+        <ul class="tags"><li>CMA-ES</li><li>MuJoCo</li><li>Evotorch</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/ec-a3" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="ml">
+        <div class="card-top">
+          <span class="card-kind">Evolutionary computation</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Evolved gecko locomotion</h3>
+        <p>CMA-ES optimisation of a gecko-morphology controller in ARIEL, with statistical comparison against random search and reusable plotting and significance-testing utilities.</p>
+        <ul class="tags"><li>CMA-ES</li><li>ARIEL</li><li>SciPy</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/evol_comp_assignment" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="finance">
+        <div class="card-top">
+          <span class="card-kind">Computational finance</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Volatility, hedging and exotic option pricing</h3>
+        <p>Realised vs implied volatility on 15 years of equity data and a model-free VIX (27.1% vs 23.5% CBOE, ρ = 0.66); Monte Carlo delta-hedging under volatility mismatch; Asian options under Heston with Euler/Milstein schemes and control variates; finite-difference pricing of binary and barrier options; Heston calibration to the S&amp;P 500 surface (RMSE &lt; 5.1%).</p>
+        <ul class="tags"><li>Monte Carlo</li><li>Heston</li><li>Finite differences</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/Computational-Finance" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="ml">
+        <div class="card-top">
+          <span class="card-kind">Learning to rank</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Hotel booking ranking</h3>
+        <p>Feature engineering over Expedia search logs, XGBoost and LightGBM rankers stacked with a Ridge meta-model under GroupKFold cross-validation. Top-10% on the Kaggle leaderboard by NDCG.</p>
+        <ul class="tags"><li>XGBoost</li><li>LightGBM</li><li>pandas</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/DMT2" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+      <li class="card" data-cat="ml">
+        <div class="card-top">
+          <span class="card-kind">Time-series ML</span>
+          <span class="card-date">2025</span>
+        </div>
+        <h3>Mood prediction from smartphone sensors</h3>
+        <p>Next-day mood from passive sensor streams and self-reports: temporal feature engineering, outlier removal, a custom Annoy-backed KNN imputer, then Random Forest vs LSTM with group-aware cross-validation. The LSTM won on temporal dependence.</p>
+        <ul class="tags"><li>PyTorch</li><li>scikit-learn</li><li>Annoy</li></ul>
+        <a class="card-link" href="https://github.com/kshnva/DMT158" target="_blank" rel="noopener">code<span aria-hidden="true"> ↗</span></a>
+      </li>
+
+    </ul>
+    <div class="slider-progress" aria-hidden="true"><span id="slider-bar"></span></div>
+  </div>
+
+  <div class="wrap">
+    <p class="projects-foot">More on <a href="https://github.com/kshnva" target="_blank" rel="noopener">github.com/kshnva</a>.</p>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="wrap two-col">
+    <div class="col-head">
+      <h2>Skills</h2>
+    </div>
+    <div class="col-body">
+      <dl class="skills">
+        <div>
+          <dt>Languages</dt>
+          <dd>Python · Julia · MATLAB · R · Mathematica · LaTeX</dd>
+        </div>
+        <div>
+          <dt>Simulation</dt>
+          <dd>ASE · CLEASE · EMT · LIGGGHTS (DEM) · OpenDC · MuJoCo · Monte Carlo (canonical, SGC, kinetic) · finite-difference / finite-volume solvers</dd>
+        </div>
+        <div>
+          <dt>Numerical methods</dt>
+          <dd>Iterative linear solvers · eigenvalue problems · time integration · SDE discretisation (Euler, Milstein) · variance reduction · Gauss–Newton / Levenberg–Marquardt · Romberg integration</dd>
+        </div>
+        <div>
+          <dt>Machine learning</dt>
+          <dd>scikit-learn · PyTorch · XGBoost · LightGBM · Gaussian-process regression · CMA-ES · genetic algorithms</dd>
+        </div>
+        <div>
+          <dt>Scientific computing</dt>
+          <dd>NumPy · SciPy · pandas · NetworkX · Matplotlib · Julia Distributed · SLURM (DAS-5) · Git · uv · Nix</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-alt" id="contact">
+  <div class="wrap two-col">
+    <div class="col-head">
+      <h2>Contact</h2>
+    </div>
+    <div class="col-body">
+      <p class="prose">
+        If you are supervising a PhD in numerical modelling, atomistic or mesoscale simulation,
+        or have a technical research role where these skills fit, I would be glad to hear from you.
+      </p>
+      <ul class="contact-list">
+        <li><span class="mono">email</span><a href="mailto:kushnavas@gmail.com">kushnavas@gmail.com</a></li>
+        <li><span class="mono">github</span><a href="https://github.com/kshnva" target="_blank" rel="noopener">github.com/kshnva</a></li>
+        <li><span class="mono">linkedin</span><a href="https://www.linkedin.com/in/kushhh/" target="_blank" rel="noopener">linkedin.com/in/kushhh</a></li>
+        <li><span class="mono">cv</span><a href="cv/Kushnava_Singha_CV.pdf" target="_blank" rel="noopener">Kushnava_Singha_CV.pdf</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> Kushnava Singha</span>
+    <span>Amsterdam, the Netherlands</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
