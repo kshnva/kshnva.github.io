@@ -161,11 +161,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .interest-grid p { margin: 0; color: var(--ink-2); font-size: .95rem; }
 
 /* timeline */
-.timeline li {
+.timeline > li {
   display: grid; grid-template-columns: 170px 1fr; gap: 24px;
   padding: 0 0 36px 0; position: relative;
 }
-.timeline li:last-child { padding-bottom: 0; }
+.timeline > li:last-child { padding-bottom: 0; }
 .tl-meta { display: flex; flex-direction: column; gap: 4px; padding-top: 3px; }
 .tl-date { font-family: var(--mono); font-size: .82rem; color: var(--accent); }
 .tl-place { font-size: .85rem; color: var(--ink-3); }
@@ -178,8 +178,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .tl-org { color: var(--ink-2); font-weight: 500; margin: 2px 0 10px; }
 .tl-note { color: var(--ink-3); font-size: .92rem; margin: 0; }
 .tl-body ul { list-style: disc; padding-left: 18px; color: var(--ink-2); }
-.tl-body ul li { margin-bottom: 8px; padding-left: 4px; }
-.timeline-compact li { padding-bottom: 24px; }
+.tl-body ul li { margin-bottom: 8px; padding-left: 4px; max-width: 70ch; }
+.timeline-compact > li { padding-bottom: 24px; }
 .timeline-compact h3 { font-size: 1.05rem; }
 
 /* ---------- projects slider ---------- */
@@ -293,7 +293,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .nav-cv { border: 0 !important; border-radius: 0; }
   .hero { padding: 64px 0 56px; }
   .section { padding: 56px 0; }
-  .timeline li { grid-template-columns: 1fr; gap: 8px; }
+  .timeline > li { grid-template-columns: 1fr; gap: 8px; }
   .tl-meta { flex-direction: row; gap: 12px; }
   .card { flex-basis: min(300px, 82vw); }
   .skills > div { grid-template-columns: 1fr; gap: 6px; }
